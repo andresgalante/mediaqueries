@@ -1,0 +1,14 @@
+{
+  "name": "CSSConfMQ",
+  "version": "1.0.0",
+  "description": "CSS conf presentation about media queries",
+  "main": "Gulpfile.js",
+  "author": "Andres Galante",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-sass": "^3.2.1"
+  }
+}
