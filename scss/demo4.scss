@@ -11,3 +11,19 @@ body, html, .container {
   text-align: center;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  padding: 2rem;
+  border: 2px solid red;
+}
+
+@media (pointer: fine) {
+  label {
+    padding: 0;
+  }
+}
