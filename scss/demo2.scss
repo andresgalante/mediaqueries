@@ -1,0 +1,30 @@
+// Mini reset and typography
+@import url("https://fonts.googleapis.com/css?family=Overpass:200,400,700");
+
+body, html, .container {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+  line-height: 1.5;
+}
+
+
+.container {
+  // On portrait viewport default to display block.
+  @media (orientation: landscape) {
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 4fr;
+  }
+}
+
+header {
+  background: orangered;
+  padding: 1rem;
+  color: white;
+}
+
+main {
+  padding: 1rem;
+}

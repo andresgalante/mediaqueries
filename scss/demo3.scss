@@ -1,0 +1,43 @@
+// Mini reset and typography
+@import url("https://fonts.googleapis.com/css?family=Overpass:200,400,700");
+
+body, html, .container {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+li {
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid lightgrey;
+  padding: 1rem 2rem;
+  background-color: #f1f1f1;
+  cursor: move;
+}
+
+i {
+ position: relative;
+ margin-right: 1rem;
+}
+/* Use z-index to make it accessible to keyboard navigation */
+@media (hover: hover) {
+  i {
+    z-index: -1;
+  }
+
+  li:hover i,
+  li:focus i {
+    z-index: auto;
+  }
+}

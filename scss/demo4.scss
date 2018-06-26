@@ -1,0 +1,13 @@
+// Mini reset and typography
+@import url("https://fonts.googleapis.com/css?family=Overpass:200,400,700");
+
+body, html, .container {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+

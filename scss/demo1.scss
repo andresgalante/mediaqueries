@@ -1,0 +1,26 @@
+// Mini reset and typography
+@import url("https://fonts.googleapis.com/css?family=Overpass:200,400,700");
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+// Grid will take card of a responsive gallery without the need of width mediauweries for breakpoints
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+// Card styles
+.card {
+ background-color: purple;
+ color: white;
+ padding: 2rem;
+ min-height: 6rem;
+}
