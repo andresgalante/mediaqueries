@@ -43,7 +43,6 @@ header {
 
   p {
     font-weight: 300;
-    // color: #ededed;
     font-size: .8rem;
   }
 }
@@ -60,9 +59,7 @@ main {
 .card {
   min-height: 4em;
   background-color: white;
-  // border: 1px solid lightgrey;
   position: relative;
-  // padding: .3rem;
   transition: .2s transform ease-in-out;
 
   img {
@@ -74,6 +71,18 @@ main {
     transform: scale3d(1.2, 1.2, 1) rotate(5deg);
     z-index: 2;
     box-shadow: 0 0.2rem 1rem -0.2rem rgba(0, 0, 0, 0.5);
+  }
+
+  &:nth-child(4n-7):hover {
+    transform: scale3d(1.2, 1.2, 1) rotate(-5deg);
+  }
+
+  &:nth-child(3n-7):hover {
+    transform: scale3d(1.2, 1.2, 1) rotate(-3deg);
+  }
+
+  &:nth-child(5n-7):hover {  /* or 4n+1 */
+    transform: scale3d(1.2, 1.2, 1) rotate(3deg);
   }
 }
 
